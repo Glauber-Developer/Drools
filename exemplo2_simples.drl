@@ -1,0 +1,22 @@
+package exemplos;
+
+import org.exemplo.Transacao;
+import org.exemplo.Conta;
+
+rule "Detecção de Transação Suspeita"
+    no-loop true
+    when
+        conta : Conta()
+        t1 : Transacao(
+            valor > 5000,
+            cidade == "São Paulo"
+        )
+        t2 : Transacao(
+            cidade != "São Paulo",
+            timestamp < 3600
+        )
+    then
+        System.out.println("Alerta: Possível fraude detectada!");
+        conta.bloquear();
+        t2.marcarSuspeita();
+end

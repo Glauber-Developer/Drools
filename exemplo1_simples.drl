@@ -1,0 +1,18 @@
+package exemplos;
+
+import org.exemplo.Cliente;
+
+rule "Classificação de Cliente Premium"
+    salience 10
+    no-loop true
+    when
+        cliente : Cliente(
+            idade > 25,
+            pontuacaoCredito > 700,
+            rendaAnual > 50000
+        )
+    then
+        System.out.println("Cliente qualificado como Premium");
+        cliente.setCategoria("Premium");
+        cliente.setLimiteCredito(5000);
+end
