@@ -2,6 +2,9 @@
 
 Este repositório contém uma gramática simplificada para regras Drools (`*.drl`) implementada com ANTLR 4.13.0. A gramática é capaz de analisar regras básicas com atributos, cláusulas `when` e `then`, além de calcular uma métrica de complexidade simples com base na quantidade de condições.
 
+## ⚙️ Repositório de Referência
+
+- [Drools](https://github.com/kiegroup/drools)
 
 ## ⚙️ Requisitos
 
