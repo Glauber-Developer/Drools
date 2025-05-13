@@ -11,6 +11,17 @@ Este repositório contém uma gramática simplificada para regras Drools (`*.drl
 - [Java](https://www.oracle.com/java/technologies/javase-downloads.html)
 - [ANTLR 4.13.0](https://www.antlr.org/download.html)
 
+## Árvores
+
+### Exemplo1
+![image](https://github.com/user-attachments/assets/5b87331d-aedc-47e9-88d3-c8c293bbccf9)
+
+### Exemplo2
+![image](https://github.com/user-attachments/assets/0034b0fa-64b9-42f4-987e-29c13edc9b60)
+
+### Exemplo3
+![image](https://github.com/user-attachments/assets/eae1813c-b700-4cab-9e6c-780c06b27bcb)
+
 ## 🔧 Como compilar e executar
 
 ### 1. Gerar o parser com ANTLR
@@ -35,6 +46,10 @@ Cálculo de uma métrica simples de complexidade
 A gramática é apenas um subconjunto da linguagem DRL do Drools.
 
 O sistema imprime no terminal a quantidade de condições e a complexidade da regra durante a análise.
+
+
+
+
 
 📄 Licença
 Este projeto é apenas para fins educacionais.
